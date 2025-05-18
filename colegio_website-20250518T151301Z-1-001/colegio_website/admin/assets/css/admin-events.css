@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #0d513a, #f7e22c);
+    margin: 0;
+    padding: 0;
+}
+
+.events-container, .add-event-container, .edit-event-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0d513a;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-event-btn, .submit-btn {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.add-event-btn:hover, .submit-btn:hover {
+    background-color: #2a6f2d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #3e8e41;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.event-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.edit-link, .delete-link {
+    color: #3e8e41;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.edit-link:hover, .delete-link:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"], input[type="date"], input[type="file"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Edit Event Form Specific Styles */
+.edit-event-container h1.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0d513a;
+}
+
+.edit-event-container .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-event-container .event-preview-image {
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.edit-event-container .btn-primary {
+    background-color: #0d513a;
+    color: #fff;
+}
+
+.edit-event-container .btn-primary:hover {
+    background-color: #3e8e41;
+}
+
+.edit-event-container .back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #0d513a;
+    text-decoration: none;
+}
+
+.edit-event-container .back-link:hover {
+    text-decoration: underline;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3e8e41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2a6f2d;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #3e8e41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #2a6f2d;
+}
+
+.pagination a[style] {
+    background-color: #2a6f2d;
+}
+
+.search-form, .sort-form {
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: #0d513a; /* Your primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #3e8e41; /* Your secondary color */
+}
+
+.sort-form {
+    display: inline-block;
+}
+
+.sort-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-image {
+        width: 80px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .submit-btn, .add-event-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .edit-event-container {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="date"], input[type="file"], textarea {
+        font-size: 14px;
+    }
+}

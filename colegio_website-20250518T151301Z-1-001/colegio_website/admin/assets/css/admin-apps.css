@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #0d513a, #f7e22c);
+    margin: 0;
+    padding: 0;
+}
+
+.apps-container, .add-app-container, .edit-app-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0d513a;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-app-btn, .submit-btn {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.add-app-btn:hover, .submit-btn:hover {
+    background-color: #2a6f2d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #3e8e41;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.edit-link, .delete-link {
+    color: #3e8e41;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.edit-link:hover, .delete-link:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"], input[type="file"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Pagination */
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #3e8e41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #2a6f2d;
+}
+
+.pagination a.active {
+    background-color: #2a6f2d;
+    font-weight: bold;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #0d513a; /* Your primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #3e8e41; /* Your secondary color */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    .submit-btn, .add-app-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .apps-container {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="file"], textarea {
+        font-size: 14px;
+    }
+}
